@@ -1,0 +1,205 @@
+ * {
+    margin: 0px;
+    padding: 0px;
+}
+/* body{
+    background-color: rgb(83, 208, 212);
+} */
+
+.navbar{
+    background-color: rgb(175, 175, 175);
+}
+
+.logo {
+    width: 100px;
+    height: 70px;
+    margin-left: 40px;
+    margin-top: 10px
+}
+
+.brand_name {
+    position: absolute;
+    top: 30px;
+    left: 85px;
+}
+
+.navbar ul {
+    float: right;
+}
+
+.navbar div {
+    display: inline-block;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: navfonts;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover {
+    color: rgb(83, 208, 212);
+    letter-spacing: 5px;
+    transition-duration: .8s;
+}
+
+@font-face {
+    font-family: navfont;
+    src: url(../fonts/Lora-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: navfonts;
+    src: url(../fonts/AbrilFatface-Regular.ttf);
+}
+
+.fonts p {
+    font-family: navfont;
+    font-size: 25px;
+}
+
+/* bunner */
+
+.bunner img {
+    width: 100%;
+    height: 800px;
+}
+
+.bunner_text {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+}
+
+.bunner_text h1 {
+    font-family: navfont;
+    margin: 15px;
+    margin-left: -15px;
+}
+
+.shop_now {
+    border: 1px solid rgb(48, 138, 141);
+    color: rgb(48, 138, 141);
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.shop_now:hover {
+    background-color: rgb(48, 138, 141);
+    color: white;
+    cursor: pointer;
+}
+
+.product_header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.divided {
+    width: 100px;
+    margin: auto;
+    border: 1px solid rgb(48, 138, 141);
+}
+
+.product {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    grid-gap: 40px;
+    text-align: center;
+}
+
+.product_img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.add_to_cart {
+    border-radius: 15px;
+    background-color: rgb(226, 234, 237);
+    padding: 10px 15px;
+    border: 1px solid white;
+}
+
+.add_to_cart:hover {
+    cursor: pointer;
+}
+
+.discount {
+    color: red;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+/* footer */
+#footer {
+	/* background: url(../images/bg-footer.gif) repeat-x top left; */
+	margin: 0;
+	padding: 40px 0;
+	background-color: rgb(175, 175, 175);
+}
+#footer div {
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+	width: 940px;	
+}
+#footer div .connect {
+	float: left;
+	overflow: hidden;	
+	width: auto;
+}
+#footer div .connect h4 {
+	color: black;
+	float: left;	
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 28px;
+	margin: 0;
+	padding: 0;
+}
+#footer div .connect ul {
+	float: left;
+	margin: 0;
+	padding: 0;	
+	overflow: hidden;
+	width: 200px;
+}
+#footer div .connect ul li {
+	float: left;
+	list-style: none;
+	margin: 0 0 0 15px;
+	padding: 0;	
+}
+#footer div .connect ul li a {
+	display: block;	
+	height: 26px;
+	width: 38px;
+	text-indent: -99999em;
+}
+#footer div .connect ul li.facebook a {
+	background: url(../images/facebook.png) no-repeat 0 0;
+    width: 30px;
+    height: 50px;
+
+}
+#footer div .connect ul li.twitter a {
+	background: url(../images/twitter.png) no-repeat 0 0;
+    width: 30px;
+    height: 50px;	
+}
+#footer div p {
+	color: black;
+	float: right;
+	font-size: 12px;
+}

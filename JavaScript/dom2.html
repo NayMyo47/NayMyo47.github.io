@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading" onclick="changeColor()">Create textNote Elements and Attributes</h1>
+    <p id="text_node"></p>
+    <button onclick="create_textNote()">Create textNode</button>
+    <br><br>
+    <button onclick="creat_element()">Craete Element</button>
+    <br><br>
+    <input type="text" name="name" id="name">
+    <button onclick="adding()">Add</button>
+    <ul id="ulist">
+        <li>Hsu Sandi</li>
+    </ul>
+
+    <script>
+        function create_textNote() {
+            // alert ('Hello');
+            let hi = document.createTextNode('Hello JavaScript DOM');
+            console.log(hi);
+            let p = document.querySelector('#text_node');
+            p.appendChild(hi);
+        }
+
+        function creat_element() {
+            //alert('hi');
+            let h3 = document.createElement('h3');
+            console.log(h3);
+            h3.innerText = 'This is h3 Element';
+            console.log(h3);
+            document.body.appendChild(h3);
+        }
+
+        function adding() {
+            //alert('Hello');
+            let name = document.querySelector('#name').value;
+            console.log(name);
+            let list = document.createElement('li');
+            list.innerText = name;
+            console.log(list);
+            let ulist = document.querySelector('#ulist');
+            ulist.appendChild(list);
+        }
+
+        function changeColor() {
+            //alert('Hello');
+            let heading = document.querySelector('#heading');
+            let attr = heading.getAttribute('style');
+            console.log(attr);
+            if(attr){
+                heading.removeAttribute('style');
+            }else {
+                heading.setAttribute('style','color:brown');
+            }
+        }
+    </script>
+</body>
+</html>

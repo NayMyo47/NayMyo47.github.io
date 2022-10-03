@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function funName() {
+            document.write('<h1>Hello Function</h1>');
+        }
+        funName();
+
+        function addResult(num1, num2){
+            let add_result = num1 + num2;
+            document.write(`<h3>Add Result is ${add_result}</h3>`);
+        }
+
+        addResult(25, 50);
+
+        function subResult(num1 = 50, num2 = 25){
+            let sub_result = num1 - num2;
+            document.write(`<h3>Sub Result is ${sub_result}</h3>`);
+        }
+
+        subResult();
+        subResult(120, 50);
+
+        function getSize(length, width, height){
+            let area = length * width;
+            let volume = length * width * height;
+            return [area,volume];
+        }
+
+        let area = getSize(3,2)[0];
+        let volume = getSize(3,2,3)[1];
+        document.write(`<h3>Area is ${area}</h3>`);
+        document.write(`<h3>Volume is ${volume}</h3>`);
+
+         //Objects
+         let hotel = {
+            name: 'XYZ Hotel',
+            rooms: 40,
+            booked: 25,
+            gym: true,
+            roomType: ['twin','double','suite'],
+            checkAvaiability: function() {
+                return this.rooms - this.booked;
+            }
+         }
+
+         let hotelName = hotel.name;
+         document.write(`<h3>Hotel name is ${hotelName}</h3>`);
+         let roomFree = hotel.checkAvaiability();
+         document.write(`<h3>Availability room is ${roomFree}</h3>`);
+
+         hotel.pool = false;
+         console.log(hotel);
+         
+         delete hotel.pool;
+         console.log(hotel);
+
+    </script>
+    
+</body>
+</html>

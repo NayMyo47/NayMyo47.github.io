@@ -1,0 +1,274 @@
+h1 {
+    color: rgb(20, 20, 94);
+    text-align: center;
+    font-size: 50px;
+}
+
+/*universal selector */
+
+* {
+    /* color: blueviolet; */
+    margin: 0px;
+    padding: 0px;
+}
+
+/* tag/element selector */
+small {
+    display: inline-block;
+    text-indent: 50px;
+    letter-spacing: 1px;
+    word-spacing: 20px;
+    line-height: 30px;
+    color: brown;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+/* attribute selector */
+
+a[title="google"]{
+    color: red;
+}
+
+/* id selector */
+#idselector{
+    color: aqua;
+}
+
+/* class selector */
+.classselector{
+    color: cadetblue;
+    font-size: large;
+    word-spacing: 10px;
+    line-height: 20px;
+}
+
+/* desc selector */
+.desc a {
+    color: aquamarine;
+}
+
+/* child selector */
+.child > a {
+    color: bisque;
+}
+
+/* psuedo selector */
+a:link {
+    color: brown;
+}
+
+a:hover {
+    color: black;
+    letter-spacing: 5px;
+}
+
+a:active {
+    color: wheat;
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+/* target */
+p:target{
+    color: cadetblue;
+    border: 5px dashed navy;
+    
+}
+
+div:target{
+    color: royalblue;
+    border: 3px groove gray;
+}
+
+/* Boder */
+
+.boder1 {
+    border: 5px dashed navy;
+}
+
+.boder2 {
+    border-left: 5px dashed navy;
+    border-top: 3px dashed navy;
+}
+
+.boderwidth {
+    border-width: 10px;
+    border-style: solid;
+}
+
+.boderstyle {
+    /* border-style: groove; */
+    /* all four T/R/B/L */
+    /* border-style: dashed solid; */
+    /* T&B / L&R */
+    /* border-style: solid dotted double; */
+    /* T / L&R / B */
+    border-style: dashed solid double dotted;
+    /* T / R / B / L */
+}
+
+/* Margin */
+
+.margin1 {
+    border: 2px dashed navy;
+    margin: 50px;
+}
+
+.margin2 {
+    border: 2px dashed navy;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+/* Padding */
+
+.padding {
+    border: 2px dashed navy;
+    padding: 30px 50px;
+}
+
+/* Lyout */
+
+.inline {
+    border: 2px dashed navy;
+    width: 200px;
+    display: inline-block;
+}
+
+.block {
+    border: 2px dashed navy;
+    width: 200px;
+    display: inline-block;
+}
+
+/* Float */
+
+.float_left img {
+    width: 50%;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.float_right img {
+    width: 50%;
+    float: right;
+}
+
+/* Grid */
+
+.grid1 div, 
+.grid2 div,
+.grid3 div,
+.grid4 div,
+.grid5 div,
+.grid6 div {
+    padding: 20px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.grid1,
+.grid2,
+.grid3,
+.grid4,
+.grid5,
+.grid6 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid2 {
+    grid-column-gap: 30px;
+}
+
+.grid3 {
+    grid-row-gap: 30px;
+}
+
+.grid4 {
+    /* grid-gap: 30px; */
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+
+.columnadd {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.rowadd {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+/* Position */
+
+/* Relative */
+
+.relative_parent {
+    border: 1px dashed navy;
+    width: 1000px;
+    height: 500px;
+}
+
+.relative {
+    border: 1px solid red;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+/* Absolute */
+
+.absolute_parent {
+    border: 1px dashed navy;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+}
+
+.absolute {
+    border: 1px solid blueviolet;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+}
+
+/* Fixed */
+
+.fixed {
+    position: fixed;
+    top: 100px;
+    right: 50px;
+}
+
+/* Online Font */
+
+.online {
+    font-family: 'Abril Fatface', cursive;
+}
+
+/* Offline Font */
+
+@font-face {
+    font-family: anton;
+    src: url(AntonFont/Anton-Regular.ttf);
+}
+
+.offline {
+    font-family: anton;
+}
