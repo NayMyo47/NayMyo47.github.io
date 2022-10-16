@@ -1,0 +1,247 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* body{
+    background-color: rgb(83, 208, 212);
+} */
+
+.navbar{
+    background-color: rgb(255, 255, 255);
+}
+
+.logo {
+    width: 100px;
+    height: 70px;
+    margin-left: 40px;
+    margin-top: 10px
+}
+
+.brand_name {
+    position: absolute;
+    top: 30px;
+    left: 85px;
+}
+
+.navbar ul {
+    float: right;
+}
+
+.navbar div {
+    display: inline-block;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: navfonts;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover {
+    color: rgb(83, 208, 212);
+    letter-spacing: 5px;
+    transition-duration: .8s;
+}
+
+.cart_noti {
+    position: relative;
+    top: -20px;
+    left: -4px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+}
+
+@font-face {
+    font-family: navfont;
+    src: url(../fonts/Lora-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: navfonts;
+    src: url(../fonts/AbrilFatface-Regular.ttf);
+}
+
+.fonts p {
+    font-family: navfont;
+    font-size: 25px;
+}
+
+/* product */
+
+.product h1, h2 {
+    text-align: center;
+    font-family: navfonts;
+    color: rgb(27, 102, 124);
+}
+
+.product hr {
+    text-align: center;
+    width: 100px;
+    height: 5px;
+    background-color: rgb(27, 102, 124);
+    margin: auto;
+}
+
+.product_grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.product_grid img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgb(0 , 0 , 0 , .20);
+}
+
+.product_grid button {
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border: 1px solid rgb(27, 102, 124);
+    margin-left: 100px;
+}
+
+.product_grid button:hover {
+    color: white;
+    background-color: rgb(27, 102, 124);
+    cursor: pointer;
+}
+
+.product_grid p, span, button {
+    text-align: center;
+
+}
+
+.product_grid p {
+    display: block;
+}
+
+.discount {
+    color: red;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.shop_more {
+    text-align: center;
+}
+
+.shop_more p {
+    font-weight: bold;
+}
+
+.shop_more button, p {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.shop_more .bt2, .bt3 {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.bt2:hover {
+    background-color: #c4c4c4;
+    cursor: pointer;
+}
+
+.bt3:hover {
+    background-color: #c4c4c4;
+    cursor: pointer;
+}
+
+.bt1 {
+    background-color: rgb(23, 159, 177);
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.next_bt {
+    background-color: rgb(122, 140, 143);
+    font-weight: bold;
+    width: 70px;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* service */
+
+.service {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: darkgrey;
+    margin-top: 50px;
+    padding-left: 40px;
+}
+
+.service_icon p {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.service_icon p span {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.service_icon {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 80px;
+}
+
+/* footer */
+
+.footer {
+    background-color: black;
+    color: gray;
+    width: 100%;
+    height: 200px;
+}
+
+.center .footer_nav {
+    color: gray;
+    display: inline-block;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+} 
+
+.center p {
+    margin-bottom: 20px;
+}
+
+.center .icon {
+    margin: 20px 10px;
+    color: gray;
+}
