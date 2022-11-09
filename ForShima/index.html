@@ -23,9 +23,9 @@
                 <a href="" >Photos Gallery</a><span> | </span>
                 <a href="">Videos</a>
             </div>
-            <a href="" class="menu" onclick="myFunction()">
+            <div class="menu" onclick="mobileMenu()">
                 <i class="fa-solid fa-bars fa-2x"></i>
-            </a>
+            </div>
         </div>
 
         <!-- Body -->
@@ -82,6 +82,17 @@
         </center>
 
         </footer>
+        <script>
+            function mobileMenu(){
+                let x = document.querySelector('.pvDiv');
+                let y = document.querySelector('.menu');
+                if (x.style.display === 'block'){
+                    x.style.display = 'none';
+                }else {
+                    x.style.display = 'block';
+                }
+            }
+        </script>
 
 </body>
 </html>
